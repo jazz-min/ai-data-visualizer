@@ -29,7 +29,7 @@ def ask_gpt_for_chart(file_path, user_input):
     response = client.chat.completions.create(
         model="gpt-5-nano",
         messages=[
-            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "system", "content": "You are a data visualization assistant.."},
             {"role": "user", "content": prompt}
         ],
         response_format={"type": "json_object"}
